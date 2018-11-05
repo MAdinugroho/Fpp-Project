@@ -7,16 +7,16 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Desa Tim Penelitian
+    Material Kit by Creative Tim
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="<?= base_url('assets'); ?>//assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+  <link href="../assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="<?= base_url('assets'); ?>//assets/demo/demo.css" rel="stylesheet" />
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -24,7 +24,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Desa XXX </a>
+          Material Kit </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -34,14 +34,22 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDown()">
-              <i class="material-icons">home</i> Home
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">apps</i> Components
             </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="../index.html" class="dropdown-item">
+                <i class="material-icons">layers</i> All Components
+              </a>
+              <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
+                <i class="material-icons">content_paste</i> Documentation
+              </a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">
-              <i class="material-icons">local_florist</i> Product
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+              <i class="material-icons">cloud_download</i> Download
             </a>
           </li>
           <li class="nav-item">
@@ -63,20 +71,21 @@
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('<?= base_url('assets'); ?>/assets/img/back.jpg')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/profile_city.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="title">Desa Penelitian Tegal</h1>
-          <h4>Build an enviroment for better villa</h4>
+          <h1 class="title">Your Story Starts With Us.</h1>
+          <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
           <br>
-          <a href="javascript:void(0)" class="btn btn-info btn-round btn-lg"  onclick="scrollToDown()"> <i class="material-icons">expand_more</i> Mulai
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+            <i class="fa fa-play"></i> Watch video
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div  class="main main-raised">
+  <div class="main main-raised">
     <div class="container">
       <div class="section text-center">
         <div class="row">
@@ -261,94 +270,19 @@
       </div>
     </div>
   </footer>
-   <!--   Core JS Files   -->
-  <script src="<?= base_url('assets'); ?>//assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="<?= base_url('assets'); ?>//assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="<?= base_url('assets'); ?>//assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="<?= base_url('assets'); ?>//assets/js/plugins/moment.min.js"></script>
-  <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="<?= base_url('assets'); ?>//assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="<?= base_url('assets'); ?>//assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Plugin for Sharrre btn -->
-  <script src="<?= base_url('assets'); ?>//assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--	Plugin for Sharrre btn -->
+  <script src="../assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="<?= base_url('assets'); ?>//assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
-
-  <script>
-    $(document).ready(function() {
-      //init DateTimePickers
-      materialKit.initFormExtendedDatetimepickers();
-
-      // Sliders Init
-      materialKit.initSliders();
-    });
-
-
-    function scrollToDown() {
-      if ($('.main-raised').length != 0) {
-        $("html, body").animate({
-          scrollTop: $('.main-raised').offset().top
-        }, 1000);
-      }
-    }
-
-
-    $(document).ready(function() {
-
-      $('#facebook').sharrre({
-        share: {
-          facebook: true
-        },
-        enableHover: false,
-        enableTracking: false,
-        enableCounter: false,
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('facebook');
-        },
-        template: '<i class="fab fa-facebook-f"></i> Facebook',
-        url: 'https://demos.creative-tim.com/material-kit/index.html'
-      });
-
-      $('#googlePlus').sharrre({
-        share: {
-          googlePlus: true
-        },
-        enableCounter: false,
-        enableHover: false,
-        enableTracking: true,
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('googlePlus');
-        },
-        template: '<i class="fab fa-google-plus"></i> Google',
-        url: 'https://demos.creative-tim.com/material-kit/index.html'
-      });
-
-      $('#twitter').sharrre({
-        share: {
-          twitter: true
-        },
-        enableHover: false,
-        enableTracking: false,
-        enableCounter: false,
-        buttons: {
-          twitter: {
-            via: 'CreativeTim'
-          }
-        },
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('twitter');
-        },
-        template: '<i class="fab fa-twitter"></i> Twitter',
-        url: 'https://demos.creative-tim.com/material-kit/index.html'
-      });
-
-    });
-  </script>
-
-
+  <script src="../assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+</body>
 
 </html>
